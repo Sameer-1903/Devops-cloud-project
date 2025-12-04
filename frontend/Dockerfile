@@ -2,7 +2,7 @@
 FROM node:18-alpine as build
 WORKDIR /app
 COPY package.json ./
-RUN npm ci
+RUN npm install
 COPY public ./public
 COPY src ./src
 ARG REACT_APP_API_BASE
