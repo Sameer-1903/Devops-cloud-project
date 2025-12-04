@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.time.Duration;
 import java.util.Map;
 
+@CrossOrigin(origins = "*") // allow all origins for testing; restrict in production
 @RestController
 public class HelloController {
 
